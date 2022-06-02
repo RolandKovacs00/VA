@@ -1,0 +1,26 @@
+Cython~=0.29.18
+decorator
+imageio
+imgaug==0.4.0
+Keras~=2.3.1
+Keras-Applications
+Keras-Preprocessing
+matplotlib~=3.2.1
+numpy~=1.18.4
+numba~=0.51.0
+networkx
+opencv-contrib-python~=4.5.0
+Pillow~=7.1.2
+Pillow-PIL
+pandas==1.1.5
+seaborn==0.11.2
+scikit-image~=0.17.2
+scipy~=1.1.0
+six
+tqdm~=4.46.0
+wheel
+theano
+tensorflow == 1.15.0
+tensorflow-gpu == 1.15.0
+setuptools~=46.4.0
+opencv-python~=4.5.5.64

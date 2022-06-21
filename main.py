@@ -6,14 +6,14 @@ import imutils
 hog = cv2.HOGDescriptor()
 hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
-cap = cv2.VideoCapture('video.mp4')
+cap = cv2.VideoCapture('6.mp4')
 
 while cap.isOpened():
     # Reading the video stream
     ret, image = cap.read()
     if ret:
         image = imutils.resize(image,
-                               width=min(400, image.shape[1]))
+                               width=min(800, image.shape[1]))
 
         # Detecting all the regions
         # in the Image that has a
@@ -21,7 +21,7 @@ while cap.isOpened():
         (regions, _) = hog.detectMultiScale(image,
                                             winStride=(4, 4),
                                             padding=(4, 4),
-                                            scale=1.05)
+                                            scale=0.70)
 
         # Drawing the regions in the
         # Image
@@ -39,3 +39,5 @@ while cap.isOpened():
 
 cap.release()
 cv2.destroyAllWindows()
+
+
